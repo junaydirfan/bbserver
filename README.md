@@ -86,23 +86,30 @@ Or with a custom configuration file:
 
 2. Connect to the server using telnet:
 
+```
 telnet localhost 9000
+```
 
 Or:
 
+```
 telnet <ip> <port_number>
+```
 
 3. Send commands:
 
+```
 USER Alice
 WRITE Hello World!
 READ 1
 QUIT
+```
 
 4. To stop all instances of the server:
 
+```
 killall bbserv
-
+```
 
 ## Configuration
 
@@ -116,6 +123,19 @@ The server can be configured using a configuration file (e.g., `server.conf`) wi
 - DEBUG: Enable debug logging
 - DELAY: Introduce artificial delay for testing
 - PEER: IP and port of peer servers (can be multiple)
+
+Example Configuration file:
+
+```
+BBFILE=bbfile.txt
+BBPORT=4100
+SYNCPORT=6100
+THMAX=10
+DAEMON=1
+DEBUG=1
+DELAY=0
+PEER=localhost:3100
+```
 
 ## Key Learning Points
 
