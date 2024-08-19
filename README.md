@@ -48,29 +48,41 @@ This project relies on standard C libraries:
 
 1. Clone the repository:
 
+```
 git clone https://github.com/yourusername/bbserver.git
+```
 
 2. Navigate to the project directory:
 
+```
 cd bbserver
+```
 
 3. Compile the server:
 
+```
 make
+```
 
 ## Usage
 
 1. Start the server:
 
+```
 ./bbserv
+```
 
 Or
 
+```
 ./bbserv server.conf
+```
 
 Or with a custom configuration file:
 
+```
 ./bbserv <condig_file>.conf
+```
 
 2. Connect to the server using telnet:
 
